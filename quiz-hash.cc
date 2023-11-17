@@ -47,7 +47,7 @@ init_hash()
           bid -= HASH_BUCKET_SIZE;
           if (bid == key % HASH_BUCKET_SIZE){
             printf("cannot insert\n");
-            exit(1);
+            return;
           }
         }
       }
